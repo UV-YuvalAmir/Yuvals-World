@@ -4,6 +4,7 @@ import { Mail, Youtube, Linkedin, Instagram, Facebook, Camera, Briefcase, Fish }
 import { createPageUrl } from '../utils';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { useEffect } from "react";
+import yuvalProfile from '@/assets/yuval-profile.jpg';
 
 export default function Home() {
 
@@ -114,7 +115,7 @@ export default function Home() {
           <div className="relative z-10 mx-auto w-64 h-64 md:w-96 md:h-96">
             <div className="absolute inset-0 rounded-full border-4 border-cyan-400 shadow-2xl shadow-cyan-500/50" style={{ zIndex: 1 }} />
             <img
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/693309da58d24500edfd2629/ba58565f2_Yuval2025.png"
+              src={yuvalProfile}
               alt="Yuval Amir - Product Manager, Entrepreneur, and Technology Enthusiast"
               className="w-full h-full object-cover rounded-full"
               style={{ zIndex: 2, position: 'relative' }}
